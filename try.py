@@ -15,6 +15,9 @@ if user_option == 'Check Flights':
         source = st.selectbox('Source',sorted(city))
     with col2:
         destination = st.selectbox('Destination', sorted(city))
+    if st.button('Search'):
+        results = db.fetch_all_flights(source,destination)
+        st.dataframe(results)
 
 elif user_option == 'Analytics':
     st.title('Analytics')
