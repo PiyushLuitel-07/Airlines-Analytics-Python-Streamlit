@@ -11,6 +11,10 @@ if user_option == 'Check Flights':
     st.title('Check Flights')
     col1,col2 = st.columns(2)
     city = db.fetch_city_names()
+    with col1:
+        source = st.selectbox('Source',sorted(city))
+    with col2:
+        destination = st.selectbox('Destination', sorted(city))
 
 elif user_option == 'Analytics':
     st.title('Analytics')
