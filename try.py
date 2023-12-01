@@ -9,6 +9,7 @@ user_option = st.sidebar.selectbox('Menu',['Select One','Check Flights','Analyti
 
 if user_option == 'Check Flights':
     st.title('Check Flights')
+    col1,col2 = st.columns(2)
 
 elif user_option == 'Analytics':
     st.title('Analytics')
