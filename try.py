@@ -5,3 +5,4 @@ import plotly.express as px
 
 db = DB()
 
+st.sidebar.title('Flights Analytics')
